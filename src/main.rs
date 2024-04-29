@@ -20,7 +20,7 @@ fn main() -> () {
 
     let exit_code = match command.as_str() {
 
-        "add" => AddCommand::new().handle(),
+        "add" => AddCommand::new(args).handle(),
 
         "list" => ListCommand::new().handle(),
         
